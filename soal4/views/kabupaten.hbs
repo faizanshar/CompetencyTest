@@ -1,0 +1,32 @@
+{{>header}}
+{{>navbar}}
+<div class="container">
+    <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Kabupaten
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="/">Provinsi</a></li>
+            <li><a class="dropdown-item" href="/kabupaten">Kabupaten</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        {{#each kabupaten}}
+        <div class="col-3 mt-5 mb-5 bg-content">
+            <div class="content">
+                <div class="content-img-area">
+                    <img src="{{this.photo}}" class="img-area" alt="">
+                </div>
+                <div class="content-title-area">{{this.name}}</div>
+                <div class="content-official-area">{{this.diresmikan}}</div>
+                <div class="content-btn-area">
+                    <a href="/detail-kabupaten/{{this.id}}">Detail</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <div style="height: 50px;"></div>
+    </div>
+</div>
+{{>footer}}

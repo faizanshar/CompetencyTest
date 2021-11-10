@@ -1,0 +1,48 @@
+{{>header}}
+{{>navbar}}
+
+<div class="container">
+    <form action="/detail-kabupaten/{{kabupaten.id}}" method="post" enctype="multipart/form-data">
+        <div class="row container-form-pro">
+            <div class="col-5">
+                <div class="select-img-provinsi">
+                    <label for="file" class="img-provinsi">Attach Thumbnail</label>
+                    <input type="file" hidden id="file" name="image" aria-label="File browser example"
+                        onchange="handleChange()">
+                    <div id="contentSelectImg" class="content-select-img-pro">
+                        <img src="{{kabupaten.photo}}" class="select-img-pro" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="content-form-provinsi">
+                    <div class="form-provinsi">
+                        <h5>Input Data Provinsi</h5>
+                        <input type="text" id="" name="name" value="{{kabupaten.name}}" class="input" placeholder="Name">
+                        <input type="text" id="" name="diresmikan" value="{{kabupaten.diresmikan}}" class="input"
+                            placeholder="Diresmikan">
+                        <select id="" name="provinsi" class="select-provinsi" required>
+                            {{#each provinsiNow}}
+                            <option value={{id}} disabled selected>{{name}}</option>
+                            {{/each}}
+                            {{#each provinsi}}
+                            <option value={{this.id}}>{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                        <button type="submit">Submit</button>
+                        <a href="/detail-kabupaten/{{kabupaten.id}}/delete">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    function handleChange() {
+        const previewElemen = document.getElementById('contentSelectImg')
+        const value = URL.createObjectURL(event.target.files[0])
+
+        previewElemen.innerHTML = `<img src=${value} class = "select-img-pro"/>`
+    }
+</script>
+{{>footer}}

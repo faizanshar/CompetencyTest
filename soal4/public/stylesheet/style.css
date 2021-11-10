@@ -1,0 +1,203 @@
+/* HOME : NAV  */
+.bg-nav{
+    background-color: #212121;
+}
+
+/* HOME */
+.bg-content{
+    height: 300px;
+    /* background-color: red; */
+}
+.filter{
+    width: 20%;
+    height: 30px;
+    /* border-radius: 10px; */
+}
+.content{
+    width: 100%;
+    min-height: 370px;
+    max-height: 420px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content-img-area{
+    width: 100%;
+    height: 250px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-img-area img{
+    width: 70%;
+    height: 70%;
+}
+.content-title-area{
+    width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.content-official-area{
+    width: 100%;
+    height: 20px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.content-btn-area{
+    width: 100%;
+    height: 50px;
+    /* background-color: yellow; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.content-btn-area a{
+    width: 100%;
+    height: 40px;
+    background-color: #212121;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* ADD-PROVINSI */
+.container-form-pro{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-top: 100px;
+    height: 400px;
+}
+.select-img-provinsi{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.img-provinsi{
+    width: 30%;
+    height: 30px;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 20px;
+    color: #ffffff;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.content-select-img-pro{
+    width: 70%;
+    height: 250px;
+    align-self: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-img-pro{
+    width: 70%;
+    height:80%;
+}
+.content-form-provinsi{
+    width: 100%;
+    height: 100%;
+    /* background-color: #212121; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-provinsi{
+    width: 70%;
+    height: 380px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form-provinsi h5{
+    color: #ffffff;
+    margin-top: 30px;
+    color: #212121;
+}
+.input{
+    width: 70%;
+    height: 40px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input-date{
+    width: 40%;
+    height: 40px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    align-self: flex-start;
+    margin-left: 65px;  
+}
+.form-provinsi button{
+    width: 70%;
+    height: 40px;
+    background-color: #212121;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.select-provinsi{
+    width: 70%;
+    height: 40px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: gray;
+}
+.form-provinsi a{
+    width: 70%;
+    height: 40px;
+    background-color: red;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
